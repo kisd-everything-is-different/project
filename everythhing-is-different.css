@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  background-color: rgba(246, 207, 192, 1);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "poppins", "Helvetica, Arial", sans-serif;
+  color: rgb(34, 34, 34);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+}
+
+a:active,
+a:visited {
+  outline: 0;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  cursor: default;
+}
+
+a:hover {
+  outline: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+}
+
+img {
+  border: 0;
+}
+
+.headline {
+  font-size: 7.5vh;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 8%;
+}
+
+/* === Navigation === */
+
+#nav {
+  padding-top: 1em;
+  max-height: 80px;
+  font-weight: 400;
+  font-size: 1.5em;
+  position: fixed;
+  width: 96%;
+  margin: 0 2%;
+  z-index: 1;
+}
+
+.kisd-logo {
+  font-family: myriad-pro-semi-condensed, sans-serif;
+}
+
+.kisd-logo:hover {
+  text-decoration: none !important;
+}
+
+.logo-kisd_headline {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.logo-kisd__subline {
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+#about-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 4px;
+}
+
+.container {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* === MAIN === */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#titel {
+  margin-top: -5%;
+  font-size: 12vw;
+  text-align: center;
+}
+
+#planet {
+  margin-top: -2%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#planet img {
+  z-index: -1;
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  opacity: 0.5;
+  mix-blend-mode: luminosity;
+}
+
+.who-we-are {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.who-we-are p {
+  font-size: 3vw;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.video {
+  padding-top: 20%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact {
+  font-size: 5vh;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.contact a {
+  margin-top: 5%;
+  border-radius: 60px;
+  border: 2px solid rgb(34, 34, 34);
+  padding: 0.7vw;
+}
+
+.contact a:hover {
+  color: rgb(34, 34, 34);
+  background-color: white;
+  text-decoration: none;
+}
+
+.write {
+  margin-top: 5%;
+  border-radius: 40px;
+  border: 2px solid rgb(34, 34, 34);
+  padding: 1.2vw;
+  font-size: 3vh;
+}
+
+.write:hover {
+  color: rgb(34, 34, 34);
+  background-color: white;
+  text-decoration: none;
+}
+
+/* === faq === */
+.faq {
+  font-size: 3vh;
+  text-align: left;
+  width: 100%;
+  margin-top: 15%;
+}
+
+.inner_faq {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.email_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.first_faq
+{
+  border-top: 1px solid rgb(34, 34, 34);
+}
+
+.active {
+  border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+.antwort {
+  border-bottom: 1px solid rgb(34, 34, 34);
+  font-size: 2.5vh;
+  padding: 2%;
+}
+
+.frage {
+  cursor: pointer;
+  padding: 2%;
+}
+
+.frage:hover {
+  background-color:white;
+}
+
+/* === footer === */
+footer {
+  font-size: 1.5em;
+  padding-bottom: 1%;
+}
+
+.impressum-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #nav {
+    font-size: 1.2em;
+  }
+
+  #titel {
+    font-size: 15vw;
+  }
+
+  .headline {
+    font-size: 4vh;
+  }
+
+  #planet img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .who-we-are p {
+    font-size: 4.5vw;
+  }
+
+  .download {
+    padding: 2vw;
+    font-size: 3vh;
+  }
+
+  .container {
+    width: 98%;
+  }
+
+  .video {
+    width: 90%;
+  }
+
+  .upload {
+    font-size: 3rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .inner_faq {
+    width: 100%;
+  }
+
+  .frage {
+    font-size: 2vh;
+    padding: 4.5% 4%;
+  }
+
+  .antwort {
+    font-size: 1.7vh;
+    padding-left: 4%;
+  }
+
+  .contact {
+    font-size: 3vh;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }
+
+  .contact a {
+    margin-top: 30%;
+    width:90vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .email_container {
+    margin-top:10%;
+    margin-bottom: 5%;
+  }
+
+  footer {
+    font-size: 1.2em;
+    padding-bottom: 1%;
+  }
+
+
+}
